@@ -1,0 +1,205 @@
+.carousel {
+  position: relative;
+  top: 100px;
+  left: 200px;
+  width: 190px;
+  height: 210px;
+  margin: 0;
+  -webkit-perspective: 800px;
+  perspective: 800px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.carousel-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(-182px) rotateY(0);
+  transform: translateZ(-182px) rotateY(0);
+  -webkit-animation: carousel 10s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
+  animation: carousel 10s infinite cubic-bezier(1, 0.015, 0.295, 1.225) forwards;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 190px;
+  height: 210px;
+  border-radius: 6px;
+  text-align: center;
+  line-height: 216px;
+    font-weight: bold;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.carousel-item:nth-child(1) {
+  background: rgba(252, 192, 77, 0.9);
+  -webkit-transform: rotateY(0) translateZ(182px);
+  transform: rotateY(0) translateZ(182px);
+}
+
+.carousel-item:nth-child(2) {
+  background: rgba(49, 192, 204, 0.9);
+  -webkit-transform: rotateY(72deg) translateZ(182px);
+  transform: rotateY(72deg) translateZ(182px);
+}
+
+.carousel-item:nth-child(3) {
+  background: rgba(236, 233, 242, 0.9);
+  -webkit-transform: rotateY(144deg) translateZ(182px);
+  transform: rotateY(144deg) translateZ(182px);
+}
+
+.carousel-item:nth-child(4) {
+  background: rgba(236, 233, 242, 0.9);
+  -webkit-transform: rotateY(216deg) translateZ(182px);
+  transform: rotateY(216deg) translateZ(182px);
+}
+
+.carousel-item:nth-child(5) {
+  background: rgb(102, 255, 153);
+  -webkit-transform: rotateY(288deg) translateZ(182px);
+  transform: rotateY(288deg) translateZ(182px);
+}
+
+.carousel-item:nth-child(6) {
+  background: rgb(102, 255, 153);
+  -webkit-transform: rotateY(360deg) translateZ(182px);
+  transform: rotateY(360deg) translateZ(182px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes 
+carousel {  0%, 10% {
+ -webkit-transform: translateZ(-182px) rotateY(0);
+ transform: translateZ(-182px) rotateY(0);
+}
+ 20%, 30% {
+ -webkit-transform: translateZ(-182px) rotateY(-72deg);
+ transform: translateZ(-182px) rotateY(-72deg);
+}
+ 40%, 50% {
+ -webkit-transform: translateZ(-182px) rotateY(-144deg);
+ transform: translateZ(-182px) rotateY(-144deg);
+}
+ 60%, 70% {
+ -webkit-transform: translateZ(-182px) rotateY(-216deg);
+ transform: translateZ(-182px) rotateY(-216eg);
+}
+80%, 90% {
+ -webkit-transform: translateZ(-182px) rotateY(-288deg);
+ transform: translateZ(-182px) rotateY(-288deg);
+}
+}
+ @keyframes 
+carousel {  0%, 10% {
+ -webkit-transform: translateZ(-182px) rotateY(0);
+ transform: translateZ(-182px) rotateY(0);
+}
+ 20%, 30% {
+ -webkit-transform: translateZ(-182px) rotateY(-72deg);
+ transform: translateZ(-182px) rotateY(-72deg);
+}
+ 40%, 50% {
+ -webkit-transform: translateZ(-182px) rotateY(-144deg);
+ transform: translateZ(-182px) rotateY(-144deg);
+}
+ 60%, 70% {
+ -webkit-transform: translateZ(-182px) rotateY(-216deg);
+ transform: translateZ(-182px) rotateY(-216deg);
+}
+80%, 90% {
+ -webkit-transform: translateZ(-182px) rotateY(-288deg);
+ transform: translateZ(-182px) rotateY(-288deg);
+}
+
+}
+
+.logo.text-center.wow.fadeInDown.animated {
+    font-size: 4em;
+    font-weight: bold;
+    color: gray;
+}
+
+
+
+
+
+
+
+
+.img-class{
+	width: 300px !important;
+}
+
+
+
+
+.carousel-container {
+  max-width: 900px;
+  margin: 0px auto;
+      padding-left: 28px;
+}
+.carousel-images {
+  float: left;
+  background-color: #ccc;
+  height: 510px;
+  width: 45%;
+  padding-left: 20px;
+  margin-top: 70px;
+  position: relative;
+}
+
+.carousel-img .item {
+	display: block;
+	position: absolute;
+	transform: scale(0.9);
+  box-shadow: 0 0 20px black;
+}
+
+.carousel-img .item.active {
+	transform: scale(1);
+}
+
+.carousel-img .item.transition {
+    transition: all 0.35s ease;
+}
+.controls {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.controls a {
+  text-decoration: none;
+  padding: 5px;
+  color: #333;
+  font-weight: bold;
+}
+.controls a:hover {
+  color: #000;
+}
+
+.carousel-text {
+  float:right;
+  width: 45%;
+}
+.item-text {
+  display: none;
+}
